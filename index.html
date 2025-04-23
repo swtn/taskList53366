@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <form id="task-form">
+        <input type="text" id="task-content" placeholder="Treść zadania">
+        <select id="task-user">
+            <option value="user1">Użytkownik 1</option>
+            <option value="user2">Użytkownik 2</option>
+        </select>
+        <button type="submit">Dodaj zadanie</button>
+    </form>
+
+    <div id="filters">
+        <div class="filter-group">
+          <label for="filter-status">Filtruj po statusie</label>
+          <select id="filter-status">
+            <option value="all">Wszystkie</option>
+            <option value="pending">Tylko oczekujące</option>
+            <option value="done">Tylko zakończone</option>
+          </select>
+        </div>
+      
+        <div class="filter-group">
+          <label for="filter-user">Filtruj po użytkowniku</label>
+          <select id="filter-user">
+            <option value="all">Wszyscy</option>
+            <option value="user1">Użytkownik 1</option>
+            <option value="user2">Użytkownik 2</option>
+          </select>
+        </div>
+      </div>
+
+
+    <div id="task-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>
